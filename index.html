@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku & Komik Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Buku & Komik Online Joe Dan Akbar</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#books">Buku & Komik</a>
+            <a href="#cart">Keranjang</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Selamat Datang di Toko Kami!</h2>
+        <p>Temukan koleksi buku dan komik terbaik dengan harga terjangkau.</p>
+    </section>
+
+    <section id="books">
+        <h2>Daftar Buku & Komik</h2>
+        <div class="book-list">
+            <!-- Contoh buku 1 -->
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Buku 1">
+                <h3>buku
+                </h3>
+                <p>Harga: Rp 50.000</p>
+                <button onclick="addToCart('Judul Buku 1', 50000)">Tambah ke Keranjang</button>
+            </div>
+            <!-- Contoh buku 2 -->
+            <div class="book-item">
+                <img src="https://via.placeholder.com/150" alt="Komik 1">
+                <h3> Komik </h3>
+                <p>Harga: Rp 30.000</p>
+                <button onclick="addToCart('Judul Komik 1', 30000)">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan lebih banyak item di sini -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rp <span id="total">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Toko Buku & Komik. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
